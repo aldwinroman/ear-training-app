@@ -1,0 +1,161 @@
+/* main font is Metropolis Bold */
+@font-face {
+    font-family: 'Metropolis Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Metropolis Bold'), url('metropolis-2-webfont/Metropolis-Bold.woff') format('woff');
+    }
+
+@font-face {
+    font-family: 'Metropolis Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Metropolis Regular'), url('metropolis-2-webfont/Metropolis-Regular.woff') format('woff');
+    }
+
+body {
+    font-family: 'Metropolis Bold';
+    background-color: #F4F4F4 ;
+    color: #333333;
+    margin: 0;
+}
+
+/* header and navigaton bar */
+
+h1 {
+    
+    display: inline;
+    margin-top: auto;
+    margin-bottom: auto;
+    vertical-align: middle;
+
+    color: initial;
+
+}
+
+
+a#homepage-logo{
+    display: inline;
+    text-decoration: none;
+
+}
+
+a#homepage-logo:hover {
+    transform: scale(1.05); /* Slightly enlarges text */
+}
+
+div.header{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+
+    background-color: #FFFFFF;
+
+    border-bottom: 5px solid #F1F2F3;
+    border-top: 5px #2a292a solid ; 
+    
+    display: flex;
+    align-items: center;
+
+
+}
+
+div.topNav {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    align-items: center;
+    gap: 1%;
+    
+}
+
+div.topNav a{
+    padding: 1% 2%;
+    vertical-align: middle;
+    text-decoration: none;
+    color: initial;
+
+    
+}   
+
+div.topNav a:hover {
+    background-color: #ddd;
+    border-radius: 7px;
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* main container */
+
+div.main-container {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+
+    background-color: #FFFFFF;
+    
+    border-radius: 7px;
+
+    padding-top: 0.01%; /* lmao */
+    padding-bottom: 0.01%;
+    padding-left: 2%;
+    padding-right: 2%;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+p {
+    text-align: center;
+}
+
+p.title{
+    font-size: 1.5rem;
+}
+
+p.text{
+    font-size: 1.1rem;
+    font-family: 'Metropolis Regular';
+    line-height: 150%;
+
+}
+
+/* Game cubes */
+
+div.game-container{
+    margin-top: 0.01%;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+div.game-container > a{
+    background-color: #FFFFFF;
+    border-radius: 7px; /* this makes the corners round */
+    padding: 0.5% 1% 1% 1%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    width: 22%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    color: black;
+
+    text-decoration: none;
+
+    margin-top: 1%;
+    margin-bottom: 0.40%;
+
+}
+
+a.game-cube:hover{
+    transform: scale(1.05);
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    
+}
+
+
+
